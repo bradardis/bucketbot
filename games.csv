@@ -1,0 +1,193 @@
+Away,Home,Actual_Score,Line,Projection,ID
+Wizards,Nets,248,222.5,223,1
+Lakers,Pelicans,257,233.5,225.5,2
+Suns,Pistons,216,228.5,242.5,3
+Clippers,Knicks,262,221,220.5,4
+Tblazers,Bulls,250,235.5,224,5
+Heat,Bucks,238,223.5,215,6
+Rockets,Thunder,274,231.5,235,7
+Mavs,Warriors,232,226.5,216,8
+Hawks,Nuggets,236,230.5,230,9
+Magic,Hornets,232,236,224.5,10
+Cavs,Pacers,225,"228,5",219.5,11
+76ers,Knicks,205,224.5,216.5,12
+Raptors,Grizzlies,209,229,233,13
+Nuggets,Timberwolves,226,226.5,224,14
+Kings,Pelicans,240,226.5,214,15
+Celtics,Pistons,210,227.5,227.5,16
+Caviliers,Wizards,205,220.5,221.5,17
+Clippers,Nets,240,221.5,224,18
+Spurs,Bulls,232,239.5,230.5,19
+Kings,Rockets,260,238.5,213.5,20
+Mavs,Jazz,235,222,216,21
+Thunder,Warriors,255,232.5,247.5,22
+Bucks,Blazers,235,241,258.5,23
+Knicks,Magic,200,225,222.5,24
+SUns,Nets,228,225,226,25
+Hawks,Pelicans,223,236.5,219,26
+Bulls,Grizzlies,193,233.5,208,27
+Twolves,Nuggets,258,233,242,28
+Thunder,Lakers,263,239,241,29
+Pistons,Caviliers,198,221.5,256,30
+Hornets,Wizards,222,235.5,216.5,31
+76ers ,Celtics,205,224,227.5,32
+Pacers,Heat,227,223,210,33
+SPurs,Raptors,210,232,230,34
+Kings,Rockets,258,239,213.5,35
+Twolves,Jazz,261,236.5,256.5,36
+Mavs,Clippers,214,220.5,216,37
+Warriors,Tblazers,247,234.5,263,38
+Nuggets,Magic,219,231.5,224,39
+Suns,Hawks,223,228.5,227.5,40
+Bulls,Nets,221,225.5,229,41
+Bucks,Lakers,221,238.5,246.5,42
+SPurs,Pistons,269,234.5,241,43
+Suns,Pacers,221,231,234,44
+Knicks,76ers,227,222.5,223,45
+Hornets,Celtics,243,227,224,46
+Jazz,Raptors,238,230.5,223,47
+Rockets,Heat,192,230.5,221,48
+Twolves,Grizzlies,235,233.5,216,49
+Caviliers,Pelicans,225,221.4,206,50
+Thunder,Tblazers,267,239.5,250.5,51
+Mavericks,Kings,236,233,243.5,52
+Bukcs,Clippers,225,227,225.5,53
+76ers,Nets,199,223,225.5,54
+Nuggets,Hornets,224,238,218,55
+Heat,Magic,210,213.5,223,56
+Pacers,Wizards,240,236,232.5,57
+SPurs,Hawks,231,240.5,230.5,58
+Jazz,Knicks,246,230,244.5,59
+Bulls,Caviliers,186,220.5,231.5,60
+Lakers,Warriors,212,236,247.5,61
+Mavs,Kings,261,236,244.5,62
+Hawks,Hornetd,282,241,207,63
+Spurs,Caviliers,226,224,241,64
+Jazz,Pacers,240,242,243,65
+Rockets,76ers,227,226.5,227.5,66
+Nuggets,Heat,219,218.5,206,67
+Nets,Knicks,230,220,226,68
+Magic,Bulls,191,224.5,206,69
+Pelicans,Thunder,203,235.5,236,70
+Twolves,Mavericks,245,232.5,258,71
+Wizards,Warriors,261,233.5,238,72
+Lakers,Tblazers,242,238.5,237,73
+Magic,Raptors,236,221.5,219,74
+Celtics,Bucks,256,225,224,75
+Kings,Suns,229,233.5,213.5,76
+Warriors,Clippers,258,228.5,237.5,77
+Wizards,Tblazers,227,236.5,246,78
+SPurs,Hornets,230,243.5,228.5,79
+Bulls,Pacers,230,231,218.5,80
+Cavs,76ers,230,216.5,219,81
+Knicks,Hawks,223,233.5,238,82
+Pistons,Celtics,236,227.5,240,83
+Heat,Nets,221,211.5,219.5,84
+Jazz,Grizzlies,228,239,234.5,85
+Rockets,Thunder,229,234,239,86
+Mavs,Nuggets,227,234,220,87
+Pelicans,Lakers,222,234.5,239,88
+Bucks,Bulls,212,229,228.5,89
+Wizards,Twolves,220,235,242,90
+Clippers,Suns,224,221.5,198.5,91
+Nuggets,Cavs,224,222.5,228.5,92
+Celtics,Pacers,280,232,221,93
+Pistons,Magic,214,228.5,226.5,94
+Grizzlies,76ers,215,230.5,232.5,95
+Pelicans,Raptors,225,226,217.5,96
+Spurs,Mavericks,258,239.5,235.5,97
+Thunder,Jazz,239,240,243,98
+Warriors,Lakers,235,238.5,256,99
+Tblazers,Kings,249,241.5,237.5,100
+Raptors,Wizards,227,222,240,101
+76ers,Mavericks,259,229,225,102
+Pacers,Spurs,209,237.5,251.5,103
+Clippers,Warriors,206,231.5,233.5,104
+Magic,Hornets,223,225,226,105
+Tblazers,Hawks,240,241.5,237.5,106
+Nets,Celtics,220,227.5,227.5,107
+Knicks,Heat,242,215,212,108
+Suns,Bulls,229,223,219,109
+Jazz,Thunder,233,231.5,248,110
+Grizzlies,Nuggets,210,234,237.5,111
+Pelicans,Warriors,207,231.5,239.5,112
+Clippers,Kings,255,240,240.5,113
+Twolves,Lakers,212,227.5,254.5,114
+bucks ,Pistons,280,236,222.6666667,115
+celtics ,Magic,211,229,226.3333333,116
+hawks ,Bulls,211,238.5,239,117
+twolves,Rockets,233,233,231,118
+hornets,Jazz,222,236.5,254.6666667,119
+bulls ,Pacers,226,234.5,214,120
+celtics ,Heat,193,215.5,216.3333333,121
+cavs ,knicks,205,220.5,226,122
+nuggets,pelicans,197,230.5,218,123
+wizards,mavs,253,226,216.3333333,124
+hornets,suns,225,226.5,234,125
+clippers,lakers,248,230,213.3333333,126
+pacers,magic,246,234.5,238,127
+nets,76ers,270,224.5,214.3333333,128
+wizards,rockets,211,233.5,249.3333333,129
+nuggets,bucks,206,227.5,254.6666667,130
+knicks,celtics,237,221.5,231.6666667,131
+pistons,nets,252,236.5,223.6666667,132
+bulls,hornets,207,234.5,224.6666667,133
+cavs,rockets,208,219.5,228,134
+mavs,suns,194,221.5,227.6666667,135
+spurs,clippers,238,234.5,240.6666667,136
+bucks,pacers,272,239,213.3333333,137
+grizzlies,Twolves,211,237.5,222.3333333,138
+magic,heat,215,219,211,139
+cavs,thunder,212,222.5,222,140
+raptors,warriors,246,235,249.6666667,141
+nuggets,76ers,245,231.5,212.3333333,142
+knicks,nets,237,223.5,209,143
+rockets,pistons,231,236.5,230.3333333,144
+bulls,magic,237,230.5,214.6666667,145
+clippers,hawks,233,232.5,212,146
+kings,twolves,227,237.5,213,147
+wizards ,pelicans,216,230,225.6666667,148
+suns ,spurs,246,232,249,149
+lakers ,celtics,246,234,240.6666667,150
+mavs ,jazz,208,224,242.6666667,151
+raptors ,tblazers,228,231.5,232.3333333,152
+heat ,hornets,239,223.5,232.6666667,153
+pacers ,grizzlies,212,241,255.3333333,154
+Clips ,cavs,221,214,205,155
+Pelicans ,bucks,245,229.5,256,156
+magic ,76ers,228,230.5,223.5,157
+lakers ,nets,225,231.5,230.5,158
+kings ,twolves,229,237,219,159
+warriors ,thunder,248,242.5,235,160
+wizards ,spurs,233,240,243.5,161
+pistons ,mavs,216,232,242,162
+raptors ,suns,220,220.5,238.5,163
+hawks ,tblazers,254,234,225.5,164
+heat ,cavs,197,210.5,229,165
+lakers ,knicks,252,232,238,166
+clippers ,bulls,211,226,221.5,167
+hornets ,bucks,239,244.5,271,168
+pelicans ,nuggets,235,231,226.5,169
+Magic ,76ers,199,230.5,222.5,170
+Tblazers ,grizzlies,234,239,217.5,171
+Nets ,celtics,235,224,232,172
+Thunder ,rockets,218,232.5,234.5,173
+Warriors ,twolves,233,238,245,174
+Kings ,spurs,228,244,237,175
+raptors ,jazz,259,230.5,254,176
+hawks ,suns,232,231.5,234,177
+lakers ,pacers,223,240.5,233.5,178
+grizzlies ,cavs,241,222.5,235.5,179
+heat ,knicks,210,213,238.5,180
+hornets ,bulls,212,236.5,241.5,181
+pelicans ,mavs,217,225.5,242.5,182
+warriors ,nuggets,251,232.5,242.5,183
+clippers ,bucks,215,230.5,250.5,184
+hornets ,pistons,230,240,243,185
+kings,pacers,211,235.5,228.5,186
+tblazers,wizards,240,238.5,219.5,187
+suns ,celtics,200,220,255.5,188
+raptors ,rockets,228,223,258,189
+magic,twolves,247,229,223.5,190
+76ers ,spurs,262,234,233.5,191
+hawks,jazz,228,242,246,192
