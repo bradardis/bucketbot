@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/json2csv"></script>
+    <script>
+       
+    //  Key
+    //  '4-2-3-1' = 1
+    //   '3-4-2-1' = 2
+    //   '3-5-1-1' = 3
+    //   '4-3-3' = 4
+    //    '5-4-1' = 5
+    //    '4-3-1-2' = 6
+    //    '5-3-2' = 7
+    //    '3-4-1-2' = 8
+    //    '3-5-2' = 9
+    //     '3-1-4-2' = 10
+    //     '3-4-3' = 11
+    //     '4-1-4-1' = 12
+    //    '4-4-2' = 13
+    //     '4-3-2-1' = 14
+    //      '4-2-2-2' = 15
+    //      '4-4-1-1' =16
+    //       '3-3-3-1' = 17
+    //       '4-5-1' = 18
+    //    '3-3-1-3' = 19
+    //     '4-1-3-2'  = 20
+    598,48,55,2,9,5662,90,2997,19147,18817,18813,1231,2937,1646,2284,19428,19361,30544,19465,2731,19789,18917,15745,47438,30407,19362,19346,19974,20589
+    550,40,46,4,4,1,15,280,283,286,290,289,19035,299,507,306,51617,297,18146,2920,8694,3421,152969,2926,18786,148099,18906,18788,18778
+    525,52,42,1,4,28,7248,18835,18862,2729,67971,182201,18843,19586,3339,3428,3247,1135,20355,22224,19959,22090,1464,49,641,37127,1460,643,127769
+    535,36,40,1,4,10,1,19657,19023,657,19145,19549,19027,899,41104,19480,19004,2825,280,286,290,289,283,292,507,299,302,306,2489
+    535,36,41,2,4,87,2427,18860,18869,19263,18866,19824,19454,2490,2734,19245,19804,18883,19599,2724,21090,19354,19298,147,19191,1904,19192,18955,983
+    555,50,45,11,5,4,20,617,626,5,18861,284230,629,44,636,635,1100,19187,2932,138417,19073,18741,2936,2165,1455,162714,2990,18781,18766
+    562,34,63,4,1,5,1914,18911,169,2806,38734,18961,18901,10135,1463,2507,18931,723,20619,19116,26238,19118,64003,19127,1150,50739,19128,162128,935
+    508,51,42,1,4,2424,7248,18959,138815,18963,152953,46731,130423,18970,18973,295,106835,1946,20355,19959,22090,22224,641,37127,49,1464,1460,1468,127769
+    593,47,66,11,13,2425,18,159,30776,133,164,18742,18968,2735,207,2061,184,186,766,894,19354,19179,2724,19191,1904,47522,19071,983,19366
+    566,65,49,4,4,98,12,19088,163,1746,18739,10122,19305,2807,24882,129711,18746,8598,2273,2280,318,259,47380,2810,2289,19220,645,978,17
+//brent wham 868124
+//liecester Lpool 868119
+
+// Grizz 
+19,24.95,5.8,35.475,91.35,42.425,1.5225,26.225,18.85,1.8225000000000002,13.05,20,4.275,114.825,8.15,48.525,33.225,11.125,0.8324999999999999,15.17530,26.236842105263158,3.289473684210526,32.55263157894737,85.39473684210526,41.473684210526315,1.6605263157894736,24.394736842105264,18.710526315789473,1.9789473684210528,8.605263157894736,20.86842105263158,3.0789473684210527,114.65789473684211,7.2894736842105265,41.1578947368421,36.421052631578945,13,0.9184210526315789,14.447368421052632
+//Bucks
+21,24.1,5.2,36.2,89.075,40.5,1.5550000000000002,24.125,17.85,1.8524999999999998,12.175,19.35,0.725,111.95,6.75,48.375,37.875,13.1,0.875,15.92541,24.75609756097561,5.853658536585366,34.31707317073171,86.5609756097561,40.97560975609756,1.5878048780487803,23.146341463414632,17.70731707317073,1.8658536585365855,9.048780487804878,19.951219512195124,-1.4878048780487805,110.46341463414635,7.121951219512195,43.36585365853659,32.146341463414636,10.804878048780488,0.8219512195121952,13.878048780487806        
+//nuggz
+9,27.55,4.225,31.825,83.95,42.3,1.58,22.875,16.95,1.8074999999999999,9.775,19.2,1.375,113.025,7.25,41.6,29.35,11.475,0.945,15.12,26.875,5.05,35.3,88.325,42.25,1.5474999999999999,22.675,18.75,2.0774999999999997,9.25,19.975,7.125,119.425,6.45,44.55,42.925,16.175,0.9400000000000001,14.125 
+
+let holder = [];
+       let oga = [];
+       let oga2 = [];
+       let playerStats = [];
+
+       function checkoga(){
+        var div = document.getElementById('display')
+        for (let i = 0; i < oga.length; i++) {
+          div.innerHTML += oga[i].formation;
+        }
+       }
+       function checkHolder2(){
+               
+               for (let i = 0; i < holder.length; i++) {
+                   
+               console.log(holder[i]) ;
+               
+               }    
+
+
+           }
+
+       const checkHolder = async() => {
+
+        var div = document.getElementById('display')
+               
+               for (let i = 0; i < holder.length; i++) {
+
+                
+                //  if(holder[i].status.long == "Finished"){
+
+                    var options = {
+                method: 'GET',
+                url: 'https://api-nba-v1.p.rapidapi.com/teams/statistics',
+                params: {id: holder[i].teams.home.id, season: '2022'},
+                headers: {
+                    'X-RapidAPI-Key': 'ff4b32c0bdmsh198b1a89a569daep1c5b8ejsnd0f24fa23d33',
+                    'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+                }
+                }
+                var options2 = {
+                method: 'GET',
+                url: 'https://api-nba-v1.p.rapidapi.com/teams/statistics',
+                params: {id: holder[i].teams.visitors.id, season: '2022'},
+                headers: {
+                    'X-RapidAPI-Key': 'ff4b32c0bdmsh198b1a89a569daep1c5b8ejsnd0f24fa23d33',
+                    'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+                }
+                }
+
+
+                   var response2 = await axios.request(options);
+                   var response3 = await axios.request(options2);
+                   console.log(response2);
+                     oga = response2.data.response;
+                     oga2 = response3.data.response;
+
+                    div.innerHTML += (holder[i].scores.home.points+holder[i].scores.visitors.points) + "," + holder[i].teams.home.id +"," +  holder[i].teams.visitors.id + ","  + (oga[0].assists/oga[0].games)+ "," +(oga[0].blocks/oga[0].games)+ "," +
+                        (oga[0].defReb/oga[0].games)+ "," +(oga[0].fga/oga[0].games)+ "," +(oga[0].fgm/oga[0].games)+ "," +
+                        (oga[0].fgp/oga[0].games)+ "," +(oga[0].fta/oga[0].games)+ "," +(oga[0].ftm/oga[0].games)+ "," +
+                        (oga[0].ftp/oga[0].games)+ "," +(oga[0].offReb/oga[0].games)+ "," +(oga[0].pFouls/oga[0].games)+ "," +
+                        (oga[0].plusMinus/oga[0].games)+ "," +(oga[0].points/oga[0].games)+ "," +(oga[0].steals/oga[0].games)+ "," +
+                        (oga[0].totReb/oga[0].games)+ "," +(oga[0].tpa/oga[0].games)+ "," +(oga[0].tpm/oga[0].games)+ "," +
+                        (oga[0].tpp/oga[0].games)+ "," +(oga[0].turnovers/oga[0].games) + "," +
+                    
+                        (oga2[0].assists/oga2[0].games)+ "," +(oga2[0].blocks/oga2[0].games)+ "," +
+                        (oga2[0].defReb/oga2[0].games)+ "," +(oga2[0].fga/oga2[0].games)+ "," +(oga2[0].fgm/oga2[0].games)+ "," +
+                        (oga2[0].fgp/oga2[0].games)+ "," +(oga2[0].fta/oga2[0].games)+ "," +(oga2[0].ftm/oga2[0].games)+ "," +
+                        (oga2[0].ftp/oga2[0].games)+ "," +(oga2[0].offReb/oga2[0].games)+ "," +(oga2[0].pFouls/oga2[0].games)+ "," +
+                        (oga2[0].plusMinus/oga2[0].games)+ "," +(oga2[0].points/oga2[0].games)+ "," +(oga2[0].steals/oga2[0].games)+ "," +
+                        (oga2[0].totReb/oga2[0].games)+ "," +(oga2[0].tpa/oga2[0].games)+ "," +(oga2[0].tpm/oga2[0].games)+ "," +
+                        (oga2[0].tpp/oga2[0].games)+ "," +(oga2[0].turnovers/oga2[0].games) +
+                    
+                    
+                    "<br />";
+                      oga = [];
+                      oga2 = [];
+                   // }
+              }    
+
+
+           }
+
+       const checkToday = async() => {
+
+        var div = document.getElementById('display')
+               
+               for (let i = 0; i < holder.length; i++) {
+
+                //only get games that went to full time
+                   
+
+                    var options = {
+                method: 'GET',
+                url: 'https://api-nba-v1.p.rapidapi.com/teams/statistics',
+                params: {id: holder[i].teams.home.id, season: '2022'},
+                headers: {
+                    'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+                    'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+                }
+                }
+                var options2 = {
+                method: 'GET',
+                url: 'https://api-nba-v1.p.rapidapi.com/teams/statistics',
+                params: {id: holder[i].teams.visitors.id, season: '2022'},
+                headers: {
+                    'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+                    'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+                }
+                }
+
+
+                   var response2 = await axios.request(options);
+                   console.log(response2);
+                   var response3 = await axios.request(options2);
+                   
+                     oga = response2.data.response;
+                     oga2 = response3.data.response;
+                console.log(oga);
+                console.log(oga2);
+                    div.innerHTML += holder[i].teams.home.id + "," + holder[i].teams.visitors.id + "," + (oga[0].assists/oga[0].games)+ "," +(oga[0].blocks/oga[0].games)+ "," +
+                        (oga[0].defReb/oga[0].games)+ "," +(oga[0].fga/oga[0].games)+ "," +(oga[0].fgm/oga[0].games)+ "," +
+                        (oga[0].fgp/oga[0].games)+ "," +(oga[0].fta/oga[0].games)+ "," +(oga[0].ftm/oga[0].games)+ "," +
+                        (oga[0].ftp/oga[0].games)+ "," +(oga[0].offReb/oga[0].games)+ "," +(oga[0].pFouls/oga[0].games)+ "," +
+                        (oga[0].plusMinus/oga[0].games)+ "," +(oga[0].points/oga[0].games)+ "," +(oga[0].steals/oga[0].games)+ "," +
+                        (oga[0].totReb/oga[0].games)+ "," +(oga[0].tpa/oga[0].games)+ "," +(oga[0].tpm/oga[0].games)+ "," +
+                        (oga[0].tpp/oga[0].games)+ "," +(oga[0].turnovers/oga[0].games) + ","
+                        + 
+                        (oga2[0].assists/oga2[0].games)+ "," +(oga2[0].blocks/oga2[0].games)+ "," +
+                        (oga2[0].defReb/oga2[0].games)+ "," +(oga2[0].fga/oga2[0].games)+ "," +(oga2[0].fgm/oga2[0].games)+ "," +
+                        (oga2[0].fgp/oga2[0].games)+ "," +(oga2[0].fta/oga2[0].games)+ "," +(oga2[0].ftm/oga2[0].games)+ "," +
+                        (oga2[0].ftp/oga2[0].games)+ "," +(oga2[0].offReb/oga2[0].games)+ "," +(oga2[0].pFouls/oga2[0].games)+ "," +
+                        (oga2[0].plusMinus/oga2[0].games)+ "," +(oga2[0].points/oga2[0].games)+ "," +(oga2[0].steals/oga2[0].games)+ "," +
+                        (oga2[0].totReb/oga2[0].games)+ "," +(oga2[0].tpa/oga2[0].games)+ "," +(oga2[0].tpm/oga2[0].games)+ "," +
+                        (oga2[0].tpp/oga2[0].games)+ "," +(oga2[0].turnovers/oga2[0].games) +
+                    
+
+
+
+
+
+
+
+
+                    "<br />";
+                      oga = [];
+                      oga2 = [];
+                    
+               }    
+
+
+           }
+
+           const options = {
+  method: 'GET',
+  url: 'https://api-football-v1.p.rapidapi.com/v3/fixtures',
+  params: {date: '2021-04-07'},
+  headers: {
+    'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+    'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
+  }
+};
+
+
+      function fixtureBySeason(){
+          
+
+        const options = {
+        method: 'GET',
+        url: 'https://api-nba-v1.p.rapidapi.com/games',
+        params: {season: '2022'},
+        headers: {
+            'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+            'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+        }
+        };
+
+        axios.request(options).then(function (response) {
+            holder= response.data.response;
+            console.log(response.data);
+        }).catch(function (error) {
+            console.error(error);
+        });
+
+// if response.fixture.status.short.val == "FT"  the game finished
+}
+function fixtureToday(){
+          
+  const options = {
+  method: 'GET',
+  url: 'https://api-nba-v1.p.rapidapi.com/games',
+  params: {id: '12142'}, 
+  headers: {
+    'X-RapidAPI-Key': 'ff4b32c0bdmsh198b1a89a569daep1c5b8ejsnd0f24fa23d33',
+    'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+  }
+};
+  
+  axios.request(options).then(function (response) {
+    holder= response.data.response;
+    console.log(response.data);
+  }).catch(function (error) {
+    console.error(error);
+  });
+  //11850
+  // if response.fixture.status.short.val == "FT"  the game finished
+  }
+  function queryByDate(){
+                                        const options = {
+                                    method: 'GET',
+                                    url: 'https://api-nba-v1.p.rapidapi.com/games',
+                                    params: {date: '2023-03-23'},
+                                    headers: {
+                                        'X-RapidAPI-Key': 'ff4b32c0bdmsh198b1a89a569daep1c5b8ejsnd0f24fa23d33',
+                                        'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+                                    }
+                                    };
+
+                                    axios.request(options).then(function (response) {
+                                        console.log(response);
+                                holder= response.data.response;
+                                    
+                                    }).catch(function (error) {
+                                        console.error(error);
+                                    });
+            }
+function players(){
+const options = {
+  method: 'GET',
+  url: 'https://api-football-v1.p.rapidapi.com/v3/fixtures/players',
+  params: {fixture: '868074'},
+  headers: {
+    'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+    'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+}
+function fixtureStats(){
+const options = {
+  method: 'GET',
+  url: 'https://api-football-v1.p.rapidapi.com/v3/fixtures/statistics',
+  params: {fixture: '868074'},
+  headers: {
+    'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+    'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+}
+function lineups(){
+const options = {
+  method: 'GET',
+  url: 'https://api-football-v1.p.rapidapi.com/v3/fixtures/lineups',
+  params: {fixture: '868124'},
+  headers: {
+    'X-RapidAPI-Key': '23551e5f3emshef583dd2bcbd538p11743cjsn80846459d77d',
+    'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+  console.log(response)
+  oga = response.data.response;
+	
+}).catch(function (error) {
+	console.error(error);
+});
+}
+    </script>
+</head>
+<body>
+ <button onClick="fixtureBySeason()">
+  fixtureBySeason/LeagueID
+ </button>
+ <button onClick="checkHolder()">
+  checkHolder
+ </button>
+ <button onClick="queryByDate()">
+  check 2022/01/01
+ </button>
+ <button onClick="fixtureToday()">
+  print selected id
+ </button>
+ <button onClick="lineups()">
+  Lineups
+ </button>
+ <button onClick="checkoga()">
+  checkoga
+ </button>
+ <button onClick="checkHolder2()">
+  check holder2
+ </button>
+ <button onClick="checkToday()">
+  today NBA check
+ </button>
+ <div id = "display">
+
+ </div>
+
+</body>
+</html>
